@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Md. Shoyb Hasan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Full-screen particle canvas — sits behind everything -->
+<canvas id="particle-canvas"></canvas>
+
+<!-- NAV -->
+<nav>
+  <a href="#hero" class="nav-logo">shoyb.dev</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#achievements">Achievements</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#articles">Articles</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <div class="hero-text">
+      <div class="hero-eyebrow">Student · Researcher · Builder</div>
+      <h1>Md. Shoyb<br /><em>Hasan</em></h1>
+      <p class="hero-tagline">
+        Exploring the intersection of artificial intelligence and physics —
+        building systems that reason, and reasoning about systems that build.
+      </p>
+      <div class="hero-badges">
+        <span class="badge">BDAIO Nationals — 6th</span>
+        <span class="badge">BdPhO Dhaka South — 3rd &amp; 6th</span>
+        <span class="badge">Princeton Physics Explorers — HM</span>
+        <span class="badge muted">Class XII · Dhaka College</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section id="about">
+    <div class="section-header reveal">
+      <h2>About</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-body reveal">
+        <p>
+          I'm a <strong>12th-grade student at Dhaka College</strong>, pursuing science with
+          a focus on mathematics and physics. My academic roots go back to
+          <strong>Ideal School and College</strong>, where I completed my SSC.
+        </p>
+        <p>
+          Two questions pull at me equally: <strong>how intelligence can emerge from
+          computation</strong>, and <strong>why the universe behaves the way it does</strong>.
+          That tension drives most of what I study and build.
+        </p>
+        <p>
+          Outside of competition work, I write code — ML pipelines, Discord bots,
+          hardware experiments with microcontrollers. I think the best way to understand
+          something is to build a broken version of it first.
+        </p>
+      </div>
+      <div class="stat-grid reveal">
+        <div class="stat-cell">
+          <div class="stat-val">6th</div>
+          <div class="stat-lbl">BDAIO Nationals</div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-val">3rd</div>
+          <div class="stat-lbl">BdPhO '25</div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-val">HM</div>
+          <div class="stat-lbl">Princeton Physics</div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-val">∞</div>
+          <div class="stat-lbl">Problems left</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ACHIEVEMENTS ── -->
+  <section id="achievements" class="alt">
+    <div class="section-header reveal">
+      <h2>Achievements</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="ach-list">
+
+      <div class="ach-item reveal">
+        <span class="ach-year">2026</span>
+        <div>
+          <div class="ach-title">BD AI Olympiad — National Round</div>
+          <div class="ach-org">Bangladesh AI Olympiad (BDAIO)</div>
+        </div>
+        <div class="ach-rank">6th</div>
+      </div>
+
+      <div class="ach-item reveal">
+        <span class="ach-year">2026</span>
+        <div>
+          <div class="ach-title">Bangladesh Physics Olympiad — Dhaka South Division</div>
+          <div class="ach-org">BdPhO · Divisional Round</div>
+        </div>
+        <div class="ach-rank">6th</div>
+      </div>
+
+      <div class="ach-item reveal">
+        <span class="ach-year">2025</span>
+        <div>
+          <div class="ach-title">Bangladesh Physics Olympiad — Dhaka South Division</div>
+          <div class="ach-org">BdPhO · Divisional Round</div>
+        </div>
+        <div class="ach-rank">3rd</div>
+      </div>
+
+      <div class="ach-item reveal">
+        <span class="ach-year">2025</span>
+        <div>
+          <div class="ach-title">Physics Explorers Event — Honorable Mention</div>
+          <div class="ach-org">Princeton University</div>
+        </div>
+        <div class="ach-rank" style="font-size:1rem;">HM</div>
+      </div>
+
+      <div class="ach-item reveal">
+        <span class="ach-year">2024</span>
+        <div>
+          <div class="ach-title">Secondary School Certificate (SSC) — Science</div>
+          <div class="ach-org">Ideal School and College, Dhaka</div>
+        </div>
+        <div class="ach-rank" style="font-size:1rem; color:var(--ink-faint);">—</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section id="skills">
+    <div class="section-header reveal">
+      <h2>Skills</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="skills-grid">
+
+      <div class="skill-group reveal">
+        <div class="skill-group-title">Language</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">C</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">SQL</span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal">
+        <div class="skill-group-title">Data &amp; ML</div>
+        <div class="skill-tags">
+          <span class="skill-tag">NumPy</span>
+          <span class="skill-tag">Pandas</span>
+          <span class="skill-tag">Scikit-learn</span>
+          <span class="skill-tag">XGBoost</span>
+          <span class="skill-tag">Matplotlib</span>
+          <span class="skill-tag">Seaborn</span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal">
+        <div class="skill-group-title">Deep Learning</div>
+        <div class="skill-tags">
+          <span class="skill-tag">PyTorch</span>
+          <span class="skill-tag">Transformers (HF)</span>
+          <span class="skill-tag">LoRA / PEFT</span>
+          <span class="skill-tag">LLM Inference</span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal">
+        <div class="skill-group-title">Domains</div>
+        <div class="skill-tags">
+          <span class="skill-tag">NLP</span>
+          <span class="skill-tag">Computer Vision</span>
+          <span class="skill-tag">Tabular ML</span>
+          <span class="skill-tag">Reinforcement Learning</span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal">
+        <div class="skill-group-title">Tools &amp; Platforms</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Git / GitHub</span>
+          <span class="skill-tag">Kaggle</span>
+          <span class="skill-tag">Jupyter</span>
+          <span class="skill-tag">Linux</span>
+          <span class="skill-tag">Discord.py</span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal">
+        <div class="skill-group-title">Hardware</div>
+        <div class="skill-tags">
+          <span class="skill-tag">ESP32</span>
+          <span class="skill-tag">Arduino</span>
+          <span class="skill-tag">Sensors &amp; Actuators</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── INTERESTS ── -->
+  <section id="interests" class="alt">
+    <div class="section-header reveal">
+      <h2>Interests</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="int-grid">
+
+      <div class="int-card reveal">
+        <span class="int-icon">◈</span>
+        <div class="int-title">Artificial Intelligence</div>
+        <p class="int-desc">
+          Neural architectures, NLP, reinforcement learning.
+          Competing in olympiads and building real systems — from transformers
+          to game-playing agents.
+        </p>
+      </div>
+
+      <div class="int-card reveal">
+        <span class="int-icon">⟁</span>
+        <div class="int-title">Physics</div>
+        <p class="int-desc">
+          Classical mechanics, electromagnetism, the geometry of natural law.
+          Olympiad training sharpened both intuition and mathematical rigour.
+        </p>
+      </div>
+
+      <div class="int-card reveal">
+        <span class="int-icon">⌘</span>
+        <div class="int-title">Building Things</div>
+        <p class="int-desc">
+          Discord bots, ESP32 hardware, ML pipelines from scratch.
+          Turning ideas into working systems — the engineering side of curiosity.
+        </p>
+      </div>
+
+      <div class="int-card reveal">
+        <span class="int-icon">⏦</span>
+        <div class="int-title">Electrical Engineering</div>
+        <p class="int-desc">
+          Circuits, microcontrollers, embedded systems. Bridging the gap between
+          physical electronics and software — where voltage meets logic.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── ARTICLES ── -->
+  <!--
+    HOW TO ADD AN ARTICLE:
+    1. Copy articles/template.html → articles/your-article-title.html
+    2. Fill in the content inside that file.
+    3. Copy one of the placeholder <a> blocks below, replace .placeholder
+       with a real card (see the commented template below the placeholders).
+    4. Save and push to GitHub.
+  -->
+  <section id="articles">
+    <div class="section-header reveal">
+      <h2>Articles</h2>
+      <div class="divider"></div>
+    </div>
+    <p class="articles-intro reveal">Occasional writing on AI, physics, and things I find genuinely interesting.</p>
+    <div class="articles-grid">
+
+      <!-- Replace these placeholder cards with real ones when you write -->
+      <a href="#" class="article-card placeholder">
+        <span class="ph-text">Article coming soon</span>
+      </a>
+      <a href="#" class="article-card placeholder">
+        <span class="ph-text">Article coming soon</span>
+      </a>
+      <a href="#" class="article-card placeholder">
+        <span class="ph-text">Article coming soon</span>
+      </a>
+
+      <!--
+      ARTICLE CARD TEMPLATE — copy this block and fill in your details:
+
+      <a href="articles/your-article-slug.html" class="article-card">
+        <div class="article-meta">
+          <span class="article-date">Jun 2026</span>
+          <span class="article-dot"></span>
+          <span class="article-readtime">5 min read</span>
+          <span class="article-tag">AI</span>
+        </div>
+        <div class="article-title">Your Article Title Here</div>
+        <p class="article-excerpt">
+          A 2–3 sentence description of what the article is about
+          and why it's worth reading.
+        </p>
+        <span class="article-readmore">Read →</span>
+      </a>
+      -->
+
+    </div>
+  </section>
+
+  <!-- ── EDUCATION ── -->
+  <section id="education" class="alt">
+    <div class="section-header reveal">
+      <h2>Education</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="edu-line">
+      <div class="edu-item reveal">
+        <div class="edu-period">2024 — Present</div>
+        <div class="edu-school">Dhaka College</div>
+        <div class="edu-detail">Higher Secondary Certificate (HSC) · Science · Dhaka, Bangladesh</div>
+      </div>
+      <div class="edu-item reveal">
+        <div class="edu-period">— 2024</div>
+        <div class="edu-school">Ideal School and College</div>
+        <div class="edu-detail">Secondary School Certificate (SSC) · Science · Dhaka, Bangladesh</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact" class="alt2">
+    <div class="section-header reveal">
+      <h2>Contact</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="contact-copy">
+          Want to talk about <em>AI, physics</em>, or something you're building?
+          I'm always up for a good conversation.
+        </div>
+        <a href="mailto:shoybhasan789@gmail.com" class="contact-email">
+          ✉ shoybhasan789@gmail.com
+        </a>
+      </div>
+      <div class="social-links reveal">
+
+        <!-- Replace href="#" with your actual profile URLs -->
+        <a href="#" class="social-link" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          GitHub
+          <span class="social-handle">github.com/Shoyb</span>
+        </a>
+
+        <a href="#" class="social-link" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057c.003.022.015.043.031.056a19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+          Discord
+          <span class="social-handle">add link later</span>
+        </a>
+
+        <a href="#" class="social-link" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          Facebook
+          <span class="social-handle">add link later</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <span>© 2026 Md. Shoyb Hasan · Dhaka, Bangladesh</span>
+  <span>Built with HTML &amp; curiosity</span>
+</footer>
+
+<script src="particles.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
